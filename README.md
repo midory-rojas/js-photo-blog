@@ -5,7 +5,8 @@ Creare la pagina dove viene visualizzata in modalità responsive le immagine in 
 
 ## Dipendenze:
 
-- libreria axios
+- Libreria axios
+- Font: 
 
 ## Scaletta di lavoro:
 
