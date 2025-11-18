@@ -13,7 +13,6 @@ img {
 /* COMMON */
 /* Typography */
 
-
 h1 {
     text-align: center;
     font-family: "Edu Tas Beginner";
@@ -64,11 +63,22 @@ body {
     padding-bottom: 40px;
 }
 
+
+
 /* HEADER */
 header {
     background-image: url(../img/wall.png);
     height: 90px;
     display:flex;
+    position: fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+main {
+    margin-top: 80px;
 }
 
 /* MAIN */
@@ -77,6 +87,31 @@ header {
     padding:10px;
     border:1px solid white;
     background-color: white;
+    text-align: center;
+    width:280px;
+    position:relative;
+    font-family: "Sometype Mono", monospace;
+    font-size: 12px;
 }
+.foto {
+    width:100%;
+    height:200px;
+    background-color: rgb(96, 162, 96);
+}
+
+.spillo {
+    width:26px;
+    position:absolute;
+    top: -13px;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.leyenda {
+    margin-top:10px;
+    padding: 4px;
+    text-align: left;
+}
+
 
 
