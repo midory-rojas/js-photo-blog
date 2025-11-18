@@ -18,6 +18,13 @@ h1 {
     font-family: "Edu Tas Beginner";
     padding: 20px;
 }
+
+h3 {
+    font-family: "Edu Tas Beginner";
+    font-size: 1.4rem;
+    text-align: left;
+
+}
 body {
     background-image: url(../img/cork.png);
 }
@@ -84,19 +91,15 @@ main {
 /* MAIN */
 
 .card {
-    padding:10px;
+    padding:15px;
     border:1px solid white;
     background-color: white;
     text-align: center;
-    width:280px;
     position:relative;
-    font-family: "Sometype Mono", monospace;
-    font-size: 12px;
 }
-.foto {
-    width:100%;
-    height:auto;
-    background-color: rgb(96, 162, 96);
+
+.card:hover {
+    transform: rotateZ(10deg);
 }
 
 .spillo {
@@ -107,7 +110,12 @@ main {
     transform: translate(-50%);
 }
 
-.leyenda {
+.card:hover .spillo {
+    opacity: 0;
+}
+
+
+p {
     margin-top:10px;
     padding: 4px;
     text-align: left;
