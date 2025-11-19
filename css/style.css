@@ -1,3 +1,11 @@
+/* Custom properties */
+:root {
+    --lightviolet-color: rgb(73, 101, 227);
+    --white-color:white;
+    --black--color:black;
+}
+
+
 /* RESET */
 
 * {
@@ -18,6 +26,7 @@ h1 {
     font-family: "Edu Tas Beginner";
     padding: 20px;
     font-size: 3rem;
+    color: var(--black--color);
 }
 
 h3 {
@@ -95,11 +104,13 @@ main {
 
 .card {
     padding:15px;
-    border:1px solid white;
-    background-color: white;
+    border:1px solid var(--white-color);
+    background-color: var(--white-color);
     text-align: center;
     position:relative;
     height:100%;
+    transition: transform 0.3s ease-in-out;
+
 }
 
 .card:hover {
@@ -115,7 +126,7 @@ main {
 }
 
 .card:hover .spillo {
-    opacity: 0;
+    opacity:0;
 }
 
 
@@ -150,7 +161,7 @@ p {
 .immagine {
     max-width:600px;
     max-height:600px;
-    border:1px solid white;
+    border:1px solid var(--white-color);
    
 }
 
@@ -164,15 +175,21 @@ p {
     top:-25px;
     left:50%;
     transform: translate(-50%);
-    background-color: rgb(73, 101, 227);
-    border: 1px solid white;
+    background-color: var(--lightviolet-color);
+    border: 1px solid var(--white-color);
     border-radius: 5px;
     padding: 5px 15px;
-    color: white;
+    color: var(--white-color);
     font-size: 1.2rem;
     z-index: 2001;
     cursor:pointer;
     font-family: sans-serif;
+}
+
+.close-button:hover {
+    background-color: var(--white-color);
+    color:var(--lightviolet-color);
+    border: 1px solid var(--lightviolet-color);
 }
 
 

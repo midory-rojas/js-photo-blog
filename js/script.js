@@ -46,7 +46,7 @@ function createOgniFoto (foto) {
     `;
     return colElem;
 }
-
+// Funzione per chiudere il bottone della modal-overlay
 const closeBtn = document.querySelector(".modal-box button");
 const modalOverlay = document.querySelector(".modal-overlay");
 
