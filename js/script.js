@@ -46,3 +46,10 @@ function createOgniFoto (foto) {
     `;
     return colElem;
 }
+
+const closeBtn = document.querySelector(".modal-box button");
+const modalOverlay = document.querySelector(".modal-overlay");
+
+closeBtn.addEventListener ("click", function () {
+    modalOverlay.classList.add("d-none");
+});

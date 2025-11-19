@@ -17,12 +17,14 @@ h1 {
     text-align: center;
     font-family: "Edu Tas Beginner";
     padding: 20px;
+    font-size: 3rem;
 }
 
 h3 {
     font-family: "Edu Tas Beginner";
     font-size: 1.4rem;
     text-align: left;
+    text-transform: uppercase;
 
 }
 body {
@@ -121,6 +123,9 @@ p {
     margin-top:10px;
     padding: 4px;
     text-align: left;
+    font-family:"Sometipe Mono", monospace;
+    font-size: 1rem;
+
 }
 
 /* STYLE OVERLAY */
@@ -145,6 +150,7 @@ p {
 .immagine {
     max-width:600px;
     max-height:600px;
+    border:1px solid white;
    
 }
 
@@ -158,12 +164,15 @@ p {
     top:-25px;
     left:50%;
     transform: translate(-50%);
-    background-color: rgb(27, 12, 68);
-    border: 1px solid gray;
+    background-color: rgb(73, 101, 227);
+    border: 1px solid white;
+    border-radius: 5px;
     padding: 5px 15px;
     color: white;
     font-size: 1.2rem;
     z-index: 2001;
+    cursor:pointer;
+    font-family: sans-serif;
 }
 
 

@@ -38,8 +38,8 @@ Date‘Sometype Mono’, ‘monospace’;
 - [x] Facciamo sparire l’overlay con l’aiuto di una classe CSS che imposti il display: none.
 
 - [x] Dopodiché facciamo sì che cliccando una qualunque foto. L’overlay ricompaia.
-- [ ] Cliccando invece il button di chiusura, l’overlay scompare nuovamente.
-- [ ] Inseriamo il pezzo di logica finale: quando una foto viene cliccata, dobbiamo fare in modo che sia proprio quella foto a essere mostrata all’interno dell’overlay.
+- [x] Cliccando invece il button di chiusura, l’overlay scompare nuovamente.
+- [x] Inseriamo il pezzo di logica finale: quando una foto viene cliccata, dobbiamo fare in modo che sia proprio quella foto a essere mostrata all’interno dell’overlay.
 
 
 
