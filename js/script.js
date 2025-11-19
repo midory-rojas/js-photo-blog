@@ -14,6 +14,7 @@ function printFoto(array) {
     const poleraidFoto = document.getElementById("poleraid-foto");
     //console.log(poleraidFoto)
     array.forEach(function (curFoto) {
+        //console.log(curFoto);
         const fotoElem = createOgniFoto(curFoto);
         poleraidFoto.append(fotoElem);
         });
@@ -24,8 +25,19 @@ function printFoto(array) {
 function createOgniFoto (foto) {
     const colElem = document.createElement("div");
         colElem.classList.add("col");
+        colElem.addEventListener("click", function() {
+            // alert(foto.url);
+            const modalOverlay = document.querySelector(".modal-overlay");
+            // console.log(modalOverlay);
+            const modalBoxImg = document.querySelector(".modal-box img");
+            const image = colElem.querySelector('.card').dataset.img;
+        
+            modalBoxImg.src = image;
+            modalOverlay.classList.remove("d-none");
+
+            });
         colElem.innerHTML = `
-        <div class="card">
+        <div class="card" data-img="${foto.url}">
             <img class="spillo" src ="img/pin.svg" alt="" />
             <img class = "foto" src ="${foto.url}" alt="primavera" />
             <p>${foto.date}</p>
